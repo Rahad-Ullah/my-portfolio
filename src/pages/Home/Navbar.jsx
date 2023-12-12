@@ -7,7 +7,7 @@ const Navbar = () => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
         <div className="drawer-content flex flex-col mt-8">
             {/* Navbar */}
-            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-20 sticky top-0 bg-[#2d2d2d] bg-opacity-80 border border-[#3b3b3b]">
+            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-20 sticky top-0 bg-neutral bg-opacity-80 border border-[#24334e]">
                 <div className="flex-none lg:hidden">
                     <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-ghost px-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -20,10 +20,10 @@ const Navbar = () => {
                 <div className="flex-none hidden lg:block">
                     <ul className="flex gap-1">
                     {/* Navbar menu content here */}
-                        <li><NavLink to={'/'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base' : 'btn btn-sm btn-ghost normal-case text-base'}>Home</NavLink></li>
-                        <li><NavLink to={'/add-book'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base' : 'btn btn-sm btn-ghost normal-case text-base'}>Add Book</NavLink></li>
-                        <li><NavLink to={'/all-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base' : 'btn btn-sm btn-ghost normal-case text-base'}>All Books</NavLink></li>
-                        <li><NavLink to={'/borrowed-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base' : 'btn btn-sm btn-ghost normal-case text-base'}>Borrowed Books</NavLink></li>
+                        <li><NavLink to={'/'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Home</NavLink></li>
+                        <li><NavLink to={'/add-book'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Add Book</NavLink></li>
+                        <li><NavLink to={'/all-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>All Books</NavLink></li>
+                        <li><NavLink to={'/borrowed-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Borrowed Books</NavLink></li>
                     </ul>
                 </div>
                 {/* right content here */}
