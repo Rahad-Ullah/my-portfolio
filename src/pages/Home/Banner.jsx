@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className="h-[90vh] flex flex-col justify-center">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse justify-between items-center w-full">
-            <div className="w-5/12">
+            <div className="w-full md:w-5/12">
                 <iframe className="w-full h-96" src="https://lottie.host/embed/d78cdd91-7887-4b20-988e-0763b140e907/iu277FenVi.lottie"></iframe>
                 </div>
                 <div className="text-white space-y-8">
