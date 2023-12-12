@@ -6,6 +6,9 @@ import img3 from "../../../assets/dream weavers 1.jpg"
 import event1 from "../../../assets/events bd 1.jpg"
 import event2 from "../../../assets/events bd 2.jpg"
 import event3 from "../../../assets/events bd 3.jpg"
+import petcare1 from "../../../assets/pet care 3.jpg"
+import petcare2 from "../../../assets/pet care 2.jpg"
+import petcare3 from "../../../assets/pet care 1.jpg"
 
 const Projects = () => {
     return (
@@ -35,7 +38,7 @@ const Projects = () => {
                     img1={event1}
                     img2={event2}
                     img3={event3}
-                    liveLink={'https://event-bd.web.app/'}
+                    liveLink={'https://event-bd.web.app'}
                     codeLink={'https://github.com/Rahad-Ullah/Events-BD'}
                     rowDirection={'row-reverse'}
                 ></Project>
@@ -43,10 +46,10 @@ const Projects = () => {
                 <Project
                     title={"Pet Care"}
                     description={"A pet adoption website. User Adoption Features: Users can view available pets for adoption. Adoption seekers can submit adoption requests for pets. Users can add their pets to the adoption listing. Ability to manage and update pet adoption listings.Donation Campaigns: Users can initiate donation campaigns for specific pets."}
-                    img1={event1}
-                    img2={event2}
-                    img3={event3}
-                    liveLink={'https://pet-care-1622a.web.app/'}
+                    img1={petcare1}
+                    img2={petcare2}
+                    img3={petcare3}
+                    liveLink={'https://pet-care-1622a.web.app'}
                     codeLink={'https://github.com/Rahad-Ullah/Pet-Care'}
                     rowDirection={'row'}
                 ></Project>

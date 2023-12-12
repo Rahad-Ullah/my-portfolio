@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 
 const Banner = () => {
+    const filePath = "../../../public/Personal_Branding.pdf"
+
     return (
         <div className="h-[90vh] flex flex-col justify-center px-4 md:px-6 lg:px-8" id="home">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse justify-between items-center w-full py-16">
@@ -30,8 +33,8 @@ const Banner = () => {
                         />
                     </div>
                     <div className="flex gap-4">
-                        <button className="btn btn-primary text-sm lg:text-base">Get Resume</button>
-                        <button className="btn btn-primary btn-outline text-sm lg:text-base">My Skills</button>
+                        <a href={filePath} download={'downloaded-file.pdf'} className="btn btn-primary text-sm lg:text-base">Get Resume</a>
+                        <a href={'#skills'} className="btn btn-primary btn-outline text-sm lg:text-base">My Skills</a>
                     </div>
                 </div>
             </div>
