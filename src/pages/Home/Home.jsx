@@ -1,13 +1,12 @@
-import About from "./About";
+
+import Banner from "./Banner";
+import Navbar from "./Navbar";
 
 const Home = () => {
     return (
-        <div>
-            <div className="h-screen">
-            <h1>Home page</h1>
-            <a href="#about">about</a>
-            </div>
-            <About></About>
+        <div className="">
+            <Navbar></Navbar>
+            <Banner></Banner>
         </div>
     );
 };
