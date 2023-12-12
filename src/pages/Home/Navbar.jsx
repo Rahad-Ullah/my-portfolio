@@ -1,34 +1,43 @@
-import { NavLink } from "react-router-dom";
 import logo from "../../assets/wepik--20231212083611waTx.png"
 
 const Navbar = () => {
     return (
         <div className="drawer text-white">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
-        <div className="drawer-content flex flex-col mt-8">
+        <div className="drawer-content flex flex-col mt-4 lg:mt-8 px-4 md:px-6 lg:px-8">
             {/* Navbar */}
-            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-20 sticky top-0 bg-neutral bg-opacity-80 border border-[#24334e]">
+            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-10 sticky top-0 bg-neutral bg-opacity-80 border border-[#24334e]">
                 <div className="flex-none lg:hidden">
                     <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-ghost px-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </label>
                 </div> 
-                <div className="px-2 mx-2">
-                    {/* <h2 className="text-2xl font-semibold text-amber-500">{"<Rahad/>"}</h2> */}
+                <div className="">
                     <img src={logo} alt="logo" className="w-24"/>
                 </div>
                 <div className="flex-none hidden lg:block">
-                    <ul className="flex gap-1">
+                    <ul className="flex gap-6">
                     {/* Navbar menu content here */}
-                        <li><NavLink to={'/'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Home</NavLink></li>
-                        <li><NavLink to={'/add-book'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Add Book</NavLink></li>
-                        <li><NavLink to={'/all-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>All Books</NavLink></li>
-                        <li><NavLink to={'/borrowed-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base font-extralight' : 'btn btn-sm btn-ghost normal-case text-base font-extralight'}>Borrowed Books</NavLink></li>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 {/* right content here */}
                 <div className="hidden lg:block">
-                    <NavLink to={'/borrowed-books'} className={({isActive}) => isActive ? 'btn btn-sm btn-primary normal-case text-base' : 'btn btn-sm btn-ghost normal-case text-base'}>Contact</NavLink>
+                    <a className="btn btn-primary text-base" href="#contact">Contact</a>
                 </div>
             </div>
             {/* Page content here */}
@@ -41,14 +50,15 @@ const Navbar = () => {
                 </li>
             </ul> */}
         </div> 
-        <div className="drawer-side">
+        <div className="drawer-side z-20">
             <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
-            <ul className=" p-4 w-80 min-h-full bg-base-200">
+            <ul className=" p-8 pt-12 w-80 min-h-full bg-base-200 space-y-4">
             {/* Sidebar content here */}
-                <li><NavLink to={'/'} className={({isActive}) => isActive ? 'btn btn-primary normal-case text-base w-full' : 'btn btn-ghost normal-case text-base w-full'}>Home</NavLink></li>
-                <li><NavLink to={'/add-book'} className={({isActive}) => isActive ? 'btn btn-primary normal-case text-base w-full' : 'btn btn-ghost normal-case text-base w-full'}>Add Book</NavLink></li>
-                <li><NavLink to={'/all-books'} className={({isActive}) => isActive ? 'btn btn-primary normal-case text-base w-full' : 'btn btn-ghost normal-case text-base w-full'}>All Books</NavLink></li>
-                <li><NavLink to={'/borrowed-books'} className={({isActive}) => isActive ? 'btn btn-primary normal-case text-base w-full' : 'btn btn-ghost normal-case text-base w-full'}>Borrowed Books</NavLink></li>
+            <li><a href="#home" className=" hover:text-primary py-2">Home</a></li>
+            <li><a href="#about" className=" hover:text-primary py-2">About</a></li>
+            <li><a href="#skills" className=" hover:text-primary py-2">Skills</a></li>
+            <li><a href="#projects" className=" hover:text-primary py-2">Projects</a></li>
+            <li><a href="#contact" className=" hover:text-primary py-2">Contact</a></li>
             </ul>
         </div>
     </div>
