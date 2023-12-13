@@ -1,9 +1,9 @@
-import { SiBootstrap, SiExpress, SiFigma, SiGit, SiGithub, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiTailwindcss } from "@icons-pack/react-simple-icons";
+import { SiBootstrap, SiExpress, SiFigma, SiFirebase, SiGit, SiGithub, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiTailwindcss } from "@icons-pack/react-simple-icons";
 import SectionTitle from "../../components/SectionTitle";
 
 const Skills = () => {
     return (
-        <div className="py-16 px-4 md:px-6 lg:px-8" id="skills">
+        <div className="py-12 md:py-16 px-4 md:px-6 lg:px-8" id="skills">
             <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
                 <SectionTitle
                     title={'The skills, tools and technologies I am really good at'}
@@ -29,6 +29,10 @@ const Skills = () => {
                     <div className="w-28 h-28 bg-neutral rounded-md flex flex-col justify-center items-center text-[#dddddd]  hover:shadow-[0_2px_16px_0px_rgb(78,109,177)]">
                         <SiMongodb color='default' size={40} title='MongoDB'/>
                         <p className="text-sm mt-3">MongoDB</p>
+                    </div>
+                    <div className="w-28 h-28 bg-neutral rounded-md flex flex-col justify-center items-center text-[#dddddd]  hover:shadow-[0_2px_16px_0px_rgb(78,109,177)]">
+                        <SiFirebase color='default' size={40} title='Firebase'/>
+                        <p className="text-sm mt-3">Firebase</p>
                     </div>
                     <div className="w-28 h-28 bg-neutral rounded-md flex flex-col justify-center items-center text-[#dddddd]  hover:shadow-[0_2px_16px_0px_rgb(78,109,177)]">
                         <SiTailwindcss color='default' size={40} title='Tailwind'/>

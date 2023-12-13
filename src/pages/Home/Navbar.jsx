@@ -1,12 +1,12 @@
-import logo from "../../assets/wepik--20231212083611waTx.png"
+import logo from "../../../public/nav_logo.png"
 
 const Navbar = () => {
     return (
-        <div className="drawer text-white">
+        <div className="drawer text-white top-4 md:top-6">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
-        <div className="drawer-content flex flex-col mt-4 lg:mt-8 px-4 md:px-6 lg:px-8">
+        <div className="drawer-content flex flex-col px-4 md:px-6 lg:px-8">
             {/* Navbar */}
-            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-10 sticky top-0 bg-neutral bg-opacity-80 border border-[#24334e]">
+            <div className="w-full navbar flex-row-reverse lg:flex-row justify-between p-3 rounded-lg max-w-5xl mx-auto px-4 md:px-6 lg:px-8 z-20 bg-neutral bg-opacity-80 border border-[#24334e]">
                 <div className="flex-none lg:hidden">
                     <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-ghost px-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
             </ul> */}
         </div> 
-        <div className="drawer-side z-20">
+        <div className="drawer-side z-30">
             <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
             <ul className=" p-8 pt-12 w-80 min-h-full bg-base-200 space-y-4">
             {/* Sidebar content here */}

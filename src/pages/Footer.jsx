@@ -1,5 +1,5 @@
 import { SiFacebook, SiGithub, SiLinkedin, SiTelegram } from "@icons-pack/react-simple-icons";
-import logo from "../assets/wepik--20231212083611waTx.png"
+import logo from "../../public/nav_logo.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -10,8 +10,8 @@ const Footer = () => {
                     <img src={logo} alt="logo" className="w-24"/>
                 </Link>  
                 <div className="flex gap-6">
-                    <Link to={"https://www.facebook.com/rtub4231423/"}><SiFacebook className="hover:text-primary"></SiFacebook></Link>
-                    <Link to={'www.github.com/Rahad-Ullah'}><SiGithub className="hover:text-primary"></SiGithub></Link>
+                    <Link to={"https://www.facebook.com/rtub4231423/"} target="_blank"><SiFacebook className="hover:text-primary"></SiFacebook></Link>
+                    <Link to={'www.github.com/Rahad-Ullah'} target="_blank"><SiGithub className="hover:text-primary"></SiGithub></Link>
                     <a href="#home"><SiTelegram className="hover:text-primary"></SiTelegram></a>
                     <a href="#home"><SiLinkedin className="hover:text-primary"></SiLinkedin></a>
                 </div>

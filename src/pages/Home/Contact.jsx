@@ -3,14 +3,14 @@ import SectionTitle from "../../components/SectionTitle";
 
 const Contact = () => {
     return (
-        <div className="py-20 px-4 md:px-6 lg:px-8" id="contact">
+        <div className="py-14 md:py-20 px-4 md:px-6 lg:px-8" id="contact">
             <div className="flex max-w-5xl mx-auto flex-col md:flex-row justify-between gap-6">
             <div className="max-w-sm space-y-4">
                 <SectionTitle
                     title={"Lets discuss about a project!"}
                     subTitle={'Contact Me'}
                 ></SectionTitle>
-                <p className="pt-6">I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just &apos;say hi&apos; to me.</p>
+                <p className="pt-6 text-sm md:text-base">I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just &apos;say hi&apos; to me.</p>
                 <div className="pt-8 space-y-4">
                     <h4 className="text-xl font-medium flex items-center gap-4"><SiGmail className="text-primary"></SiGmail> myemail.abc20@gmail.com</h4>
                     <h4 className="text-xl font-medium flex items-center gap-4"><SiGithub className="text-primary"></SiGithub>www.github.com/Rahad-Ullah</h4>
@@ -39,7 +39,7 @@ const Contact = () => {
                                 <textarea className="textarea textarea-bordered text-base" placeholder="Your message" rows={5}></textarea>
                             </div>
                             <div className="form-control mt-6">
-                            <button className="btn btn-primary text-base">Submit</button>
+                            <button className="btn btn-primary lg:text-base">Submit</button>
                             </div>
                         </form>
                     </div>
