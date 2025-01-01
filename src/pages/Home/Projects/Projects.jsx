@@ -34,7 +34,7 @@ const Projects = () => {
                 {/* Events BD */}
                 <Project
                     title={"Events BD"}
-                    description={"An awesome corporate event management website. Service Information: Clear presentation of various event management services offered by your company. Detailed descriptions and key features for each service. Visually appealing service cards on the main page for easy navigation"}
+                    description={"An awesome corporate event management website. Clear presentation of various event management services offered by your company. Detailed descriptions and key features for each service. Visually appealing service cards on the main page for easy navigation"}
                     img1={event1}
                     img2={event2}
                     img3={event3}
@@ -45,7 +45,7 @@ const Projects = () => {
                 {/* Pet Care */}
                 <Project
                     title={"Pet Care"}
-                    description={"A pet adoption website. User Adoption Features: Users can view available pets for adoption. Adoption seekers can submit adoption requests for pets. Users can add their pets to the adoption listing. Ability to manage and update pet adoption listings.Donation Campaigns: Users can initiate donation campaigns for specific pets."}
+                    description={"A pet adoption website. Users can view available pets for adoption. Adoption seekers can submit adoption requests for pets. Users can add their pets to the adoption listing. Admin can manage adoption and donation campaigns easily in the admin dashboard."}
                     img1={petcare1}
                     img2={petcare2}
                     img3={petcare3}

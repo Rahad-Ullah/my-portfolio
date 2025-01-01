@@ -27,9 +27,12 @@ const Project = ({title, description, img1, img2, img3, liveLink, codeLink, rowD
                             spaceBetween={30}
                             centeredSlides={true}
                             autoplay={{
-                            delay: 2500,
+                            delay: 2000,
                             disableOnInteraction: false,
                             }}
+                            pagination={{
+                                clickable: true,
+                              }}
                             loop={true}
                             modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"

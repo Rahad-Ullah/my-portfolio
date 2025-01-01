@@ -37,7 +37,7 @@ const Navbar = () => {
                 </div>
                 {/* right content here */}
                 <div className="hidden lg:block">
-                    <a className="btn btn-primary text-base" href="#contact">Contact</a>
+                    <a className="btn btn-primary text-base" href="https://drive.google.com/file/d/1d5RdTGZ1lSR-p1hyq4_kUDZVzkek3TeG/view?usp=sharing"> Resume</a>
                 </div>
             </div>
             {/* Page content here */}
